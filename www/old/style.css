@@ -1,0 +1,74 @@
+html{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body{
+  cursor: crosshair;
+  background: linear-gradient(red, yellow);
+  width: 100%;
+  margin:0;
+  color: #00FF94;
+  font-size:16pt;
+}
+
+a:visited{color:rgb(150,150,238)}
+
+.gif-wrapper{
+  width:150px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.gif-wrapper img{
+  min-width: 60%;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#main{
+  background-image: url("background.png");
+  background-repeat: repeat;
+  width:1300px;
+}
+
+#main>div{
+  padding:10px;
+}
+
+#main-wrapper{
+  width:100%;
+  max-width: 1000px;
+  background-color: rgba(30,0,0,0.9);
+  margin:0 auto;
+}
+
+#inner-wrapper{
+  text-align: center;
+  vertical-align: top;
+}
+
+#inner-table{width:100%;}
+
+.page-border{
+  height:32px;
+}
+
+.page-border td {width:32px;}
+
+.song-info{
+  color: #FFFF00;
+  font-size: 18pt;
+}
+
+#song-title {margin-top:20px;}
+
+#album-art{
+  height:500px;
+  margin-top:20px;
+  width: auto;
+}
+
+#team img{width:200px;height:auto;}
+#about img{width:200px;height:auto;}

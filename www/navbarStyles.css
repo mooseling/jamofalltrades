@@ -1,0 +1,107 @@
+#navbar {
+  background: #ffffff;
+  margin: auto;
+  width: auto;
+  padding: 0;
+  line-height: 20pt;
+  display: block;
+  position: relative;
+  font-family: 'Segeo', sans-serif;
+  text-align: center;
+  height: 30pt;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  display: inline-block;
+}
+
+#navbar > ul > li {
+  float: left;
+}
+
+#navbar .textLink{
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+
+#navbar .picLink{
+  display:none;
+  height:30pt;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#navbar .picLink img{
+  height:100%;
+}
+
+#navbar .snail{
+  height:30pt;
+  /*width:43.125px;*/
+  margin-bottom: -6px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#navbar > ul > li > a {
+  color: #000000;
+  padding: 5pt 15pt;
+  font-weight: 500;
+  letter-spacing: 1px;
+  height: 30pt;
+  font-size: 20pt;
+  z-index: 2;
+  position: relative;
+  display: block;
+}
+
+#navbar a:hover{
+  color:#FF0000;
+}
+
+@media all and (max-width: 1051px) and (min-width: 568px){
+/*, only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {*/
+  #navbar .picLink{
+  display:block;
+  }
+
+  #navbar .textLink{
+    display:none;
+  }
+
+  #navbar .snail{
+    display:none;
+  }
+}
+
+@media all and (max-width:567px){
+  #navbar .picLink{
+  display:none;
+  }
+
+  #navbar .textLink{
+    display:none;
+  }
+
+  #navbar .snail{
+    display:none;
+  }
+
+  #navbar #homePicLink{
+    display:block;
+  }
+
+}

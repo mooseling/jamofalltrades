@@ -1,0 +1,78 @@
+body {
+	-webkit-transition: background-color 0.5s linear;
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
+}
+
+#wrapper {
+	max-width: 410pt;
+	display: block;
+	margin: 0 auto;
+}
+
+.centerDiv {
+	max-width: 400pt;
+	background-color:#FFFFFF;
+	border-radius: 15px;
+	text-align: center;
+	margin: 20pt 10pt 0pt 10pt;
+	padding-left: 10pt;
+	padding-right: 10pt;
+}
+
+#choice {
+	padding-top: 6pt;
+	padding-bottom: 20pt;
+}
+
+#choice > h1 {
+	font-size: 30pt;
+	margin: 7pt 0;
+}
+
+#choice > form {
+	margin-top: 20pt;
+	margin-bottom: 20pt;
+}
+
+#choice > button {
+	margin-bottom: 20pt;
+}
+
+#result {
+	height:35pt;
+	line-height: 35pt;
+	margin-top:18;
+	font-size:30pt;
+}
+
+#explanationLinkDiv {
+	/* padding: 5pt 10pt; */
+	padding: 20pt;
+}
+
+input[type="text"] {
+	width: 60px;
+	padding: 5px;
+	border: solid 1px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+}
+
+input[type="text"]:focus, input[type="text"].focus {
+	border: solid 1px #707070;
+	box-shadow: 0 0 5px 0.5px #969696;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}

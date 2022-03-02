@@ -1,0 +1,40 @@
+@font-face {
+font-family: Segeo;
+src: url(segeo-wp.ttf);
+}
+
+body{
+  font-family:Segeo;
+  margin:0;
+}
+
+a{
+  color: #FF0000;
+  text-decoration: none;
+}
+
+a:visited{
+  color:#FF0000;
+}
+
+a:hover{
+  color:#000000;
+}
+/*
+.bodyContent{
+  overflow:scroll;
+  position: fixed;
+  left:0;
+  top:30pt;
+  height: calc(100% - 30pt);
+  width: 100%;
+  padding: 0;
+}
+
+#Content{
+  height:100%;
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+}

@@ -1,0 +1,93 @@
+@font-face {font-family:RedOctober; src: url('Red October-Fat.ttf')}
+
+body{
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#loadingMessage{
+	text-align: center;
+	position:fixed;
+	top:50%; left:0;
+	transform: translateY(-50%);
+	z-index: -1;
+	width:100%;
+}
+
+#wijltContent{
+	font-family: RedOctober;
+	width:100%;
+	height:calc(100% - 30pt);
+	background-color: white;
+}
+
+#wijltContent a:link { COLOR: black;}
+#wijltContent a:visited { COLOR: black;}
+#wijltContent a:active { COLOR: black;}
+#wijltContent a:hover { COLOR: red;}
+
+#textPane{
+	display: inline-block;
+	float: left;
+	height:100%;
+	width:calc(100% - 100vh + 30pt);
+}
+
+#textPane a{
+	padding: 5pt;
+	display: inline-block;
+}
+
+#toptext{
+	font-size:20pt;
+	display:inline-block;
+	width:100%;
+}
+
+.songInfo{
+	word-wrap:break-word;
+	font-size:30pt;
+	display:inline-block;
+	width: 100%
+	margin:2pt 0;
+}
+
+.songTag{
+	font-size:15pt;
+	display:inline-block;
+	width:100%;
+}
+
+#artPane{
+	float: right;
+	height:100%;
+	width: calc(100vh - 30pt);
+	overflow:hidden;
+	text-align:center;
+}
+
+#albumArt{
+	height:100%;
+	width:auto;
+}
+
+@media all and (max-aspect-ratio: 3/2){
+	body{
+		overflow-y: scroll;
+	}
+
+	#textPane{
+		width:100%;
+		height:auto;
+	}
+
+	#artPane{
+		width:100%;
+		height:auto;
+	}
+
+	#albumArt{
+		width: 100%;
+		height: auto;
+	}
+}

@@ -1,0 +1,14 @@
+@font-face {
+font-family: Segeo;
+src: url(../segeo-wp.ttf);
+}
+
+html{
+  font-family: Segeo;
+}
+
+#ihkh{
+	text-align: center;
+	margin-top: 150px;
+	font-size: 150px;
+}

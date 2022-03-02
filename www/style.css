@@ -1,0 +1,44 @@
+@font-face {font-family:Segeo; src: url('segeo-wp.ttf')}
+
+#Content{
+  font-family: Segeo;
+  overflow: hidden;
+  height:100%;
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+#backgroundImg{
+  display:none;
+  z-index: -1;
+  background: url('homeworld.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100%;
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+#Content #links {
+  position:relative;
+  top:50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width:100%;
+}
+
+#Content .widthDependant {
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+#Content .heightDependant {
+  font-size: 2.389vh;
+  text-align: center;
+}
