@@ -26,9 +26,6 @@
 			<div id=myPicWrapper>
 				<img id=myPic src=https://i.imgur.com/g25RlK9.jpg>
 			</div>
-			After that, I did lots of things. For one, I spent three years at Imperial College London learning to juggle and doing a radio show. When I left they gave me a degree in mathematics, which I wasn't entirely sure what to do with. I got a job in a cafe, took a few wild hitchhiking adventures, then went back to Imperial to learn to sail and dance. I didn't sail or dance at all, but this time they gave me a degree in "Environmental Technology".
-			<br><br>
-
 			Current occupations:<br>
 			Declaring beans at <a href=https://zedify.co.uk target=_blank>Zedify</a><br>
 			Working on <a href=https://github.com/mooseling/BananaDrum target=_blank>Banana Drum</a><br>
@@ -36,8 +33,12 @@
 			Almost never making <a href=https://soundcloud.com/thepatchworkorchestra target=_blank>music</a><br>
 			Being an enormous dweeb
 			<br>
-			<p style=clear:both;>
-
+			<br>
+			Previous occupations:<br>
+			Having <a href=https://riptidelab.com/category/james-stevenson/>wild adventures</a><br>
+			<a href=https://jamofalltrades.com>Learning to</a> <a href=https://github.com/mooseling>program</a><br>
+			Being an enormous dweeb<br>
+			<p style=clear:both;></p>
 			<h1>Unsolicited Recommendations</h1>
 			<div class=opinion>
 				<div class=imgWrapper>
