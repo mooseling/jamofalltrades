@@ -45,8 +45,8 @@
 					<img src=https://upload.wikimedia.org/wikipedia/en/4/44/ACureForSerpents.jpg>
 				</div>
 				<span class=text>
-				<h2>Read this: Alberti Denti di Pirajno, <i>A Cure for Serpents</i></h2>
-				Alberto Denti was an Italian doctor posted in North Africa throughout the 1920s, 30s, and 40s. In this book he recalls the various escapades and acquaintances from his time there, all true, and yet at times almost incredible. These are magical tales of people and cultures gone from the earth, rich and fascinating and alive. It is a truly beautiful book.
+					<h2>Read this: Alberti Denti di Pirajno, <i>A Cure for Serpents</i></h2>
+					Alberto Denti was an Italian doctor posted in North Africa throughout the 1920s, 30s, and 40s. In this book he recalls the various escapades and acquaintances from his time there, all true, and yet at times almost incredible. These are magical tales of people and cultures gone from the earth, rich and fascinating and alive. It is a truly beautiful book.
 				</span>
 			</div>
 			<div class=opinion>
@@ -54,8 +54,8 @@
 					<img src=https://upload.wikimedia.org/wikipedia/en/e/e6/Bluebear.jpg>
 				</div>
 				<span class=text>
-				<h2>Read this to someone: Walter Moers, <i>The 13½ Lives of Captain Bluebear</i></h2>
-				Pull tome from shelf, clear your throat, and let a wild tale unfold. Who will you meet this time? The troglotroll? Querty Uiop? The old men of Tornado City? And where will you go? Atlantis? The 2364th dimension? Wheover and wherever, it will be new and wonderful. I'm always looking forward to opening this up again.
+					<h2>Read this to someone: Walter Moers, <i>The 13½ Lives of Captain Bluebear</i></h2>
+					Pull tome from shelf, clear your throat, and let a wild tale unfold. Who will you meet this time? The troglotroll? Querty Uiop? The old men of Tornado City? And where will you go? Atlantis? The 2364th dimension? Wheover and wherever, it will be new and wonderful. I'm always looking forward to opening this up again.
 				</span>
 			</div>
 			<div class=opinion>
@@ -63,8 +63,8 @@
 					<a href=https://www.youtube.com/watch?v=nBUBMKzAFqs target=_blank><img src=https://i.imgur.com/F78i0T0.jpg></a>
 				</div>
 				<span class=text>
-				<h2>A legendary group: <a href=https://www.youtube.com/watch?v=nBUBMKzAFqs target=_blank><i>Penguin Cafe Orchestra</i></a></h2>
-				Born from the inspiration of a dream, Penguin Cafe Orchestra set out to make music celebrating the spontanaity and chaos of life. Joyous and playful, sometimes sorrowful, sometimes contemplative. Playful, childlike, human, free, and fun.
+					<h2>A legendary group: <a href=https://www.youtube.com/watch?v=nBUBMKzAFqs target=_blank><i>Penguin Cafe Orchestra</i></a></h2>
+					Born from the inspiration of a dream, Penguin Cafe Orchestra set out to make music celebrating the spontanaity and chaos of life. Joyous and playful, sometimes sorrowful, sometimes contemplative. Playful, childlike, human, free, and fun.
 				</span>
 			</div>
 			<div class=opinion>
@@ -72,8 +72,8 @@
 					<a href=https://i.imgur.com/NgdzOG8.jpg><img src=https://i.imgur.com/NgdzOG8.jpg></a>
 				</div>
 				<span class=text>
-				<h2>Best Board Game: <i>Scrubble</i></h2>
-				Just play Scrabble, but throw out all the rules and don't keep score. Oh man it's so fun!
+					<h2>Best Board Game: <i>Scrubble</i></h2>
+					Just play Scrabble, but throw out all the rules and don't keep score. Oh man it's so fun!
 				</span>
 			</div>
 
