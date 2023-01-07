@@ -63,7 +63,7 @@
 				</div>
 				<span class=text>
 				<h2>A legendary group: <a href=https://www.youtube.com/watch?v=nBUBMKzAFqs target=_blank><i>Penguin Cafe Orchestra</i></a></h2>
-				Born from the rather unusual inspiration of a dream, Penguin Cafe Orchestra set out to make music celebrating the spontanaity and randomness of life. Their songs are joyous and playful, though sometimes sorrowful, sometimes contemplative. Their brilliance is in the freedom of their music, and the humanity. But these are big words from an ignorant child, so please, listen for yourself.
+				Born from the inspiration of a dream, Penguin Cafe Orchestra set out to make music celebrating the spontanaity and chaos of life. Joyous and playful, sometimes sorrowful, sometimes contemplative. Playful, childlike, human, free, and fun.
 				</span>
 			</div>
 			<div class=opinion>
