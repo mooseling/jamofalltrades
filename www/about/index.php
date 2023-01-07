@@ -50,6 +50,15 @@
 			</div>
 			<div class=opinion>
 				<div class=imgWrapper>
+					<img src=https://upload.wikimedia.org/wikipedia/en/e/e6/Bluebear.jpg>
+				</div>
+				<span class=text>
+				<h2>Read this to someone: Walter Moers, <i>The 13½ Lives of Captain Bluebear</i></h2>
+				Pull tome from shelf, clear your throat, and let a wild tale unfold. Who will you meet this time? The troglotroll? Querty Uiop? The old men of Tornado City? And where will you go? Atlantis? The 2364th dimension? Wheover and wherever, it will be new and wonderful. I'm always looking forward to opening this up again.
+				</span>
+			</div>
+			<div class=opinion>
+				<div class=imgWrapper>
 					<a href=https://www.youtube.com/watch?v=nBUBMKzAFqs target=_blank><img src=https://i.imgur.com/F78i0T0.jpg></a>
 				</div>
 				<span class=text>
