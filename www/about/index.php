@@ -27,17 +27,17 @@
 				<img id=myPic src=https://i.imgur.com/g25RlK9.jpg>
 			</div>
 			Current occupations:<br>
-			None lol<br>
-			Working on <a href=https://github.com/mooseling/BananaDrum target=_blank>Banana Drum</a><br>
-			Playing in two <a href=https://gardencitysamba.com target=_blank>samba</a> <a href=https://arcoiris.org.uk target=_blank>bands</a><br>
-			Almost never making <a href=https://soundcloud.com/thepatchworkorchestra target=_blank>music</a><br>
+			Faffing with telescopes at <a href=https://supersharp.space target=_blank>SuperSharp</a><br>
+			<a href=https://github.com/mooseling/BananaDrum target=_blank>Working</a> on <a href=https://bananadrum.net target=_blank>Banana Drum</a><br>
+			Playing in <a href=https://londonschoolofsamba.co.uk/ target=_blank>some</a> <a href=https://gardencitysamba.com target=_blank>samba</a> <a href=https://arcoiris.org.uk target=_blank>bands</a><br>
 			Chief Barista and Silly Person at <a href=https://sweetpeamarketgarden.co.uk target=_blank>Sweetpea Market Garden</a><br>
 			Being an <a href=https://flubber-blob.com target=_blank>enormous</a> dweeb
 			<br>
 			<br>
 			Previous occupations:<br>
-			Having <a href=https://riptidelab.com/category/james-stevenson/>wild adventures</a><br>
-			<a href=https://jamofalltrades.com>Learning to</a> <a href=https://github.com/mooseling>program</a><br>
+			Having <a href=https://riptidelab.com/category/james-stevenson/ target=_blank>wild adventures</a><br>
+			<a href=https://jamofalltrades.com target=_blank>Learning to</a> <a href=https://github.com/mooseling target=_blank>program</a><br>
+            Almost never making <a href=https://soundcloud.com/thepatchworkorchestra target=_blank>music</a><br>
 			Being an enormous dweeb<br>
 			<p style=clear:both;></p>
 			<h1>Unsolicited Recommendations</h1>
