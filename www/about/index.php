@@ -27,11 +27,12 @@
 				<img id=myPic src=https://i.imgur.com/g25RlK9.jpg>
 			</div>
 			Current occupations:<br>
-			Declaring beans at <a href=https://zedify.co.uk target=_blank>Zedify</a><br>
+			None lol<br>
 			Working on <a href=https://github.com/mooseling/BananaDrum target=_blank>Banana Drum</a><br>
-			Playing in <a href=https://www.londonschoolofsamba.co.uk/ target=_blank>three</a> <a href=https://gardencitysamba.com target=_blank>samba</a> <a href=https://arcoiris.org.uk target=_blank>bands</a><br>
+			Playing in two <a href=https://gardencitysamba.com target=_blank>samba</a> <a href=https://arcoiris.org.uk target=_blank>bands</a><br>
 			Almost never making <a href=https://soundcloud.com/thepatchworkorchestra target=_blank>music</a><br>
-			Being an enormous dweeb
+			Chief Barista and Silly Person at <a href=https://sweetpeamarketgarden.co.uk target=_blank>Sweetpea Market Garden</a><br>
+			Being an <a href=https://flubber-blob.com target=_blank>enormous</a> dweeb
 			<br>
 			<br>
 			Previous occupations:<br>
