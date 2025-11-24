@@ -22,7 +22,7 @@ function populateBody(){
 
 	xmlhttp.onreadystatechange=function(){//LOAD GALLERY
 		if (xmlhttp.readyState==4 && xmlhttp.status==200){
-			corpseData=$.parseJSON(xmlhttp.responseText).data;
+			corpseData=$.parseJSON(xmlhttp.responseText);
 			loadCorpseDivs();
 			loadFirstPic();
 		}
@@ -45,7 +45,7 @@ function populateBody(){
 	xmlhttp2.onreadystatechange=function(){//LOAD TUTORIAL
 		if (xmlhttp2.readyState==4 && xmlhttp2.status==200){
 			loadingProgress[2] = true;
-			tutorialData=$.parseJSON(xmlhttp2.responseText).data;
+			tutorialData=$.parseJSON(xmlhttp2.responseText);
 			loadTutorialDivs();
 			if(loadingProgress[1] || loadingProgress[0]){
 				loadTutorialImg(0);
@@ -63,19 +63,19 @@ function populateBody(){
 		}
 	}
 
-	xmlhttp.open("GET","https://api.imgur.com/3/album/v4Qx8", true);
-	xmlhttp.setRequestHeader("Authorization", "Client-ID be49e405f50dbc4")
+	xmlhttp.open("GET","album.json", true);
+	// xmlhttp.setRequestHeader("Authorization", "Client-ID be49e405f50dbc4")
 	xmlhttp.send();
 	attempts++;
 
-	xmlhttp2.open("GET","https://api.imgur.com/3/album/JkBZz", true);
-	xmlhttp2.setRequestHeader("Authorization", "Client-ID be49e405f50dbc4")
+	xmlhttp2.open("GET","tutorial.json", true);
+	// xmlhttp2.setRequestHeader("Authorization", "Client-ID be49e405f50dbc4")
 	xmlhttp2.send();
 	tAttempts++;
 }
 
 function loadCorpseDivs(){
-	for(i=0;i<corpseData.images_count;i++){
+	for(i=0;i<corpseData.length;i++){
 		var newDiv = document.createElement("div");
 		newDiv.className = "picDiv";
 		newDiv.id = "corpse" + i;
@@ -89,7 +89,7 @@ function loadCorpseDivs(){
 }
 
 function loadTutorialDivs(){
-	for(i=0;i<tutorialData.images_count;i++){
+	for(i=0;i<tutorialData.length;i++){
 		var newDiv = document.createElement("div");
 		newDiv.className = "picDiv";
 		newDiv.id = "tutorial" + i;
@@ -105,22 +105,22 @@ function loadTutorialDivs(){
 function loadFirstPic(){//Creates the first corpse img and thumb and sets it's onload to trigger the rest of the loading
 	var newImg = document.createElement("img");
 	newImg.id = "corpseImg0";
-	if(corpseData.images[0].height > corpseData.images[0].width){
+	if(corpseData[0].height > corpseData[0].width){
 		newImg.className = "unloaded fader heightDependent";
 	}
 	else{
 		newImg.className = "unloaded fader widthDependent";
 	}
-	newImg.src = "http://i.imgur.com/"+corpseData.images[0].id+corpseData.images[0].type.replace("image/",".");
+	newImg.src = "/images/corpses/"+corpseData[0].src;
 	newImg.setAttribute("onload",'loadRestOfPics(); $("#corpseImg0").toggleClass("loaded unloaded"); updateLoadingStatus()');
 	$("#corpse0").append(newImg);
-	$("#corpseImg0").src = "http://i.imgur.com/"+corpseData.images[0].id+corpseData.images[0].type.replace("image/",".");
-	$("#descriptionText").html(corpseData.images[0].description.replace(/\n/g,"<br>"));
+	$("#corpseImg0").src = "/images/corpses/"+corpseData[0].src;
+	$("#descriptionText").html(corpseData[0].description.replace(/\n/g,"<br>"));
 
 	var newThumb = document.createElement("img");
 	newThumb.id = "corpseThumbImg0";
 	newThumb.className = "unloaded fader";
-	newThumb.src = "http://i.imgur.com/"+corpseData.images[0].id+corpseData.images[0].type.replace("image/",".");
+	newThumb.src = "/images/corpses/"+corpseData[0].src;
 	newThumb.setAttribute("onload",'$("#corpseThumbImg0").toggleClass("loaded unloaded")');
 	newThumb.setAttribute("onclick","goToCorpse(0)");
 	$("#corpseThumb0").append(newThumb);
@@ -137,14 +137,14 @@ function loadRestOfPics(){
 function loadCorpseImg(whichPic){
 	var newImg = document.createElement("img");
 	newImg.id = "corpseImg" + whichPic;
-	if(corpseData.images[whichPic].height > corpseData.images[whichPic].width){
+	if(corpseData[whichPic].height > corpseData[whichPic].width){
 		newImg.className = "unloaded fader heightDependent";
 	}
 	else{
 		newImg.className = "unloaded fader widthDependent";
 	}
-	newImg.src = "http://i.imgur.com/"+corpseData.images[whichPic].id+corpseData.images[whichPic].type.replace("image/",".");
-	if(whichPic<corpseData.images_count-1){
+	newImg.src = "/images/corpses/"+corpseData[whichPic].src;
+	if(whichPic<corpseData.length-1){
 		newImg.setAttribute("onload",'$("#corpseImg'+whichPic+'").toggleClass("unloaded loaded"); updateLoadingStatus(); loadCorpseImg('+(whichPic + 1)+');');
 	}
 	else{
@@ -161,7 +161,7 @@ function loadCorpseImg(whichPic){
 	var newThumb = document.createElement("img");
 	newThumb.id = "corpseThumbImg" + whichPic;
 	newThumb.className = "unloaded fader";
-	newThumb.src = "http://i.imgur.com/"+corpseData.images[whichPic].id+corpseData.images[whichPic].type.replace("image/",".");
+	newThumb.src = "/images/corpses/"+corpseData[whichPic].src;
 	newThumb.setAttribute("onload",'$("#corpseThumbImg'+whichPic+'").toggleClass("loaded unloaded")');
 	$("#corpseThumbA"+whichPic).append(newThumb);
 }
@@ -169,14 +169,14 @@ function loadCorpseImg(whichPic){
 function loadTutorialImg(whichPic){
 	var newImg = document.createElement("img");
 	newImg.id = "tutorialImg" + whichPic;
-	if(tutorialData.images[whichPic].height > tutorialData.images[whichPic].width){
+	if(tutorialData[whichPic].height > tutorialData[whichPic].width){
 		newImg.className = "unloaded fader heightDependent";
 	}
 	else{
 		newImg.className = "unloaded fader widthDependent";
 	}
-	newImg.src = "http://i.imgur.com/"+tutorialData.images[whichPic].id+tutorialData.images[whichPic].type.replace("image/",".");
-	if(whichPic<tutorialData.images_count-1){
+	newImg.src = "/images/ec-tutorial/"+tutorialData[whichPic].src;
+	if(whichPic<tutorialData.length-1){
 		newImg.setAttribute("onload",'$("#tutorialImg'+whichPic+'").toggleClass("unloaded loaded"); loadTutorialImg('+(whichPic + 1)+'); updateLoadingStatus();');
 	}
 	else{
@@ -193,14 +193,14 @@ function loadTutorialImg(whichPic){
 	var newThumb = document.createElement("img");
 	newThumb.id = "tutorialThumbImg" + whichPic;
 	newThumb.className = "unloaded fader";
-	newThumb.src = "http://i.imgur.com/"+tutorialData.images[whichPic].id+tutorialData.images[whichPic].type.replace("image/",".");
+	newThumb.src = "/images/ec-tutorial/"+tutorialData[whichPic].src;
 	newThumb.setAttribute("onload",'$("#tutorialThumbImg'+whichPic+'").toggleClass("loaded unloaded")');
 	$("#tutorialThumbA"+whichPic).append(newThumb);
 }
 
 function updateLoadingStatus(){
 	loadedImages++;
-	if(loadedImages<corpseData.images_count + tutorialData.images_count){
+	if(loadedImages<corpseData.length + tutorialData.length){
 		$("#loading").append(".");
 	}
 	else{
@@ -211,21 +211,21 @@ function updateLoadingStatus(){
 
 function goToCorpse(whichPic){
 	currentCorpse = whichPic;
-	$("#descriptionText").html(corpseData.images[whichPic].description.replace(/\n/g,"<br>"));
+	$("#descriptionText").html(corpseData[whichPic].description.replace(/\n/g,"<br>"));
 	goToCorpseGallery();
 	$("#corpseGallery").css("left",(whichPic * -100) + "%");
 }
 
 function goToTutorial(whichPic){
 	currentTutorial = whichPic;
-	$("#descriptionText").html(tutorialData.images[whichPic].description.replace(/\n/g,"<br>"));
+	$("#descriptionText").html(tutorialData[whichPic].description.replace(/\n/g,"<br>"));
 	goToTutorialGallery();
 	$("#tutorialGallery").css("left",(whichPic * -100) + "%");
 }
 
 function goToCorpseGallery(){
 	currentGallery = "corpse";
-	$("#descriptionText").html(corpseData.images[currentCorpse].description.replace(/\n/g,"<br>"));
+	$("#descriptionText").html(corpseData[currentCorpse].description.replace(/\n/g,"<br>"));
 	$("#mobileGalleryLink").html("→Go to Tutorial");
 	$("#mobileGalleryLink").attr("onclick", "goToTutorialGallery()");
 	$("#corpseGallery").css("top",0);
@@ -236,7 +236,7 @@ function goToCorpseGallery(){
 
 function goToTutorialGallery(){
 	currentGallery = "tutorial";
-	$("#descriptionText").html(tutorialData.images[currentTutorial].description.replace(/\n/g,"<br>"));
+	$("#descriptionText").html(tutorialData[currentTutorial].description.replace(/\n/g,"<br>"));
 	$("#mobileGalleryLink").html("→Go to Gallery");
 	$("#mobileGalleryLink").attr("onclick", "goToCorpseGallery()");
 	$("#corpseGallery").css("top","-100%");
@@ -247,11 +247,11 @@ function goToTutorialGallery(){
 
 function nextPic(){
 	if(currentGallery == "corpse"){
-		if(currentCorpse + 1 < corpseData.images_count)
+		if(currentCorpse + 1 < corpseData.length)
 		goToCorpse(currentCorpse + 1);
 	}
 	else{
-		if(currentTutorial + 1 < tutorialData.images_count)
+		if(currentTutorial + 1 < tutorialData.length)
 		goToTutorial(currentTutorial + 1);
 	}
 }
