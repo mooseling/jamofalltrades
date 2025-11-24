@@ -24,7 +24,7 @@
 			<h1>About the Author</h1>
 			<center>"James Stevenson hatched from an egg in the year 2015, then travelled back in time to 1999 to prevent the Y2K Bug. He failed." <i>&#8209;James&nbsp;Hope</i></center><br>
 			<div id=myPicWrapper>
-				<img id=myPic src=https://i.imgur.com/g25RlK9.jpg>
+				<img id=myPic src=/images/me.jpg>
 			</div>
 			Current occupations:<br>
 			Faffing with telescopes at <a href=https://supersharp.space target=_blank>SuperSharp</a><br>
@@ -61,7 +61,7 @@
 			</div>
 			<div class=opinion>
 				<div class=imgWrapper>
-					<a href=https://www.youtube.com/watch?v=nBUBMKzAFqs target=_blank><img src=https://i.imgur.com/F78i0T0.jpg></a>
+					<a href=https://www.youtube.com/watch?v=nBUBMKzAFqs target=_blank><img src=/images/pco.jpg></a>
 				</div>
 				<span class=text>
 					<h2>A legendary group: <a href=https://www.youtube.com/watch?v=nBUBMKzAFqs target=_blank><i>Penguin Cafe Orchestra</i></a></h2>
@@ -70,7 +70,7 @@
 			</div>
 			<div class=opinion>
 				<div class=imgWrapper>
-					<a href=https://i.imgur.com/NgdzOG8.jpg><img src=https://i.imgur.com/NgdzOG8.jpg></a>
+					<a href=/images/scrubble.jpg><img src=/images/scrubble.jpg></a>
 				</div>
 				<span class=text>
 					<h2>Best Board Game: <i>Scrubble</i></h2>

@@ -20,7 +20,7 @@ body div{
 }
 
 #ground{
-	background-image: url(http://i.imgur.com/ubog5nq.png);
+	background-image: url("/images/bookshelf.png");
 	background-repeat: repeat;
 	background-attachment: fixed;
 	background-size: 100% auto;
